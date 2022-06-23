@@ -28,7 +28,7 @@
             const game = createGame()
             const keyboardListener = createKeyboardListener(document)
             
-            const socket = io()
+           const socket = io()
 
             socket.on('connect', () => {
                 const playerId = socket.id
@@ -78,6 +78,7 @@
                 console.log(`Receiving ${command.type} -> ${command.fruitId}`)
                 game.removeFruit(command)
             })
+            
         </script>
     </body>
 </html>
