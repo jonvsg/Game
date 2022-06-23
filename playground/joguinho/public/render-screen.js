@@ -17,7 +17,7 @@ export default function renderScreen(screen, game, requestAnimationFrame, curren
 
     const currentPlayer = game.state.players[currentPlayerId]
 
-    if(currentPlayer) {
+    if (currentPlayer) {
         context.fillStyle = '#F0DB4F'
         context.fillRect(currentPlayer.x, currentPlayer.y, 1, 1)
     }

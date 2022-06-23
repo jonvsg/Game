@@ -33,7 +33,7 @@ sockets.on('connection', (socket) => {
     socket.on('move-player', (command) => {
         command.playerId = playerId
         command.type = 'move-player'
-        
+
         game.movePlayer(command)
     })
 })
